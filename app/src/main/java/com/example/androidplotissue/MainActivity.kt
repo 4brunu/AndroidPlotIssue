@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         plot.setDomainStep(XYStepMode.INCREMENT_BY_VAL, serie1Values.size.toDouble())
-        plot.graphWidget.setGridPadding(20f, 0f, 20f, 0f)
+        plot.graphWidget.setGridPadding(25f, 50f, 25f, 25f)
 
         val series1Format = LineAndPointFormatter()
         series1Format.pointLabelFormatter = PointLabelFormatter()
