@@ -2,6 +2,7 @@ package com.example.androidplotissue
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.androidplot.ui.Insets
 import com.androidplot.xy.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,8 +21,14 @@ class MainActivity : AppCompatActivity() {
             "Series1"
         )
 
-        plot.setDomainStep(XYStepMode.INCREMENT_BY_VAL, serie1Values.size.toDouble())
-        plot.graphWidget.setGridPadding(25f, 50f, 25f, 25f)
+        plot.setDomainStep(StepMode.INCREMENT_BY_VAL, serie1Values.size.toDouble())
+        // plot.graph.setGridPadding(25f, 50f, 25f, 25f)
+        // Bellow are things that I tried to use instead of the previous line, but without success
+//        plot.graph.setPadding(25f, 50f, 25f, 25f)
+//        plot.graph.gridInsets = Insets(50f, 25f, 25f, 25f)
+//        plot.setPlotPadding(25f, 50f, 25f, 25f)
+//        plot.setPlotMargins(25f, 50f, 25f, 25f)
+//        plot.setPadding(25, 50, 25, 25)
 
         val series1Format = LineAndPointFormatter()
         series1Format.pointLabelFormatter = PointLabelFormatter()
