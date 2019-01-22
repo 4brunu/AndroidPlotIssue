@@ -7,6 +7,9 @@ The problem is that in version 1.0.0, the folowing API `XYPlot.graphWidget.setGr
 
 Here is one screenshot with the grid padding, that show's the label in all points.
 
-
+![Alt text](Screenshot_with_gridpadding.png?raw=true "screenshot with grid padding")
 
 And here is one screenshot without the grid padding, that don't show the label in all points.
+
+![Alt text](Screenshot_without_gridpadding.png?raw=true "screenshot without grid padding")
+
